@@ -1,0 +1,206 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0d0d0d;
+  height: 146px;
+}
+
+header h1 {
+  color: #5e60ce;
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+header h1 span {
+  color: rgb(78, 168, 222);
+}
+
+header img {
+  margin-right: 12px;
+}
+
+.newTask {
+  display: flex;
+  width: 90%;
+  position: absolute;
+  top: 127px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.newTask input {
+  width: 100%;
+  height: 40px;
+  background-color: #262626;
+  color: wheat;
+  border: 1px solid #0d0d0d;
+  border-radius: 8px;
+}
+
+.newTask input :active {
+  border: none !important;
+}
+.newTask button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  background-color: #1e6f9f;
+  width: 63px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+}
+
+.newTask button img {
+  margin-left: 4px;
+}
+
+.app-body {
+  background-color: #262626;
+  width: 100%;
+  min-height: 80vh;
+}
+
+.app-body .number-tasks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number-tasks a {
+  margin: 50px 10px 0px 10px;
+  text-decoration: none;
+  color: #4ea8de;
+}
+
+.number-tasks :last-child {
+  color: #8284fa;
+}
+
+.number-tasks a span {
+  color: wheat !important;
+  text-align: center;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-color: #564646;
+  border-radius: 8px;
+}
+
+.app-body .line {
+  position: absolute;
+  top: 247px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 80%;
+  height: 1px;
+  background-color: #626255;
+}
+
+.app-body .no-task {
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+  flex-direction: column;
+}
+
+.no-task img {
+  width: 56px;
+  height: auto;
+}
+
+.no-task p {
+  margin-top: 30px;
+  width: 252px;
+  color: wheat;
+}
+
+.no-task p span {
+  font-weight: bold;
+}
+
+.app-body ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app-body ul:first-child {
+  margin-top: 40px;
+}
+
+.app-body ul li {
+  position: relative;
+  margin: 20px auto 0px auto;
+  width: 80%;
+  background-color: #262626;
+  border: 1px solid #0d0d0d;
+  border-radius: 8px;
+  padding: 16px 30px;
+}
+
+ul li input {
+  display: none;
+}
+
+.tasks label {
+  color: white;
+}
+
+.tasks button {
+  position: absolute;
+  background-color: #262626;
+  border: none;
+  right: 5px;
+  top: 17px;
+}
+
+.tasks .balls {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #4ea8de;
+}
+
+input:checked + label {
+  color: #7b7474;
+  text-decoration: line-through;
+}
+
+input:checked ~ .balls {
+  background-color: #4ea8de;
+}
+
+.fa-trash-can {
+  color: gray;
+}
+
+@media (min-width: 768px) {
+  .newTask {
+    width: 58%;
+  }
+
+  .app-body .number-tasks {
+    justify-content: space-around;
+  }
+
+  .app-body .line {
+    width: 62%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-body {
+    height: 88vh;
+  }
+
+  .app-body .line {
+    width: 58%;
+  }
+}

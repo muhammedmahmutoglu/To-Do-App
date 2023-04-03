@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="/img/rocket.png" alt="" />
+      <h1><span> to</span>do</h1>
+    </header>
+    <section class="newTask">
+      <input type="text" id="task" placeholder=" Lorem ipsum dolor sit." />
+      <button id="btn" >Create <img src="/logo.svg" alt="" /></button>
+    </section>
+    <section class="app-body">
+      <div class="number-tasks">
+        <a id="task-created"  href=""> Tasks created <span>0</span> </a>
+        <a id="task-completed" href="">Complete <span>0</span></a>
+      </div>
+
+      <div class="tasks" >
+        <div class="no-task">
+          <div class="line"></div>
+          <img src="/img/Clipboard.png" alt="" />
+          <p>
+            <span> You don't have tasks registered yet </span>create tasks and
+            organize your To-Dos
+          </p>
+        </div>
+
+         <ul  id="listWrapper">
+        </ul> 
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
